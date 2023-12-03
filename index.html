@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/nova-square" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <pre
+      id="debug"
+      style="color: white; position: absolute; top: 0; left: 0"
+    ></pre>
+    <div id="planet" class="planet">
+      <div class="textcolor onlyAfter" id="temperature">°C</div>
+      <div class="textcolor onlyAfter" id="minMax">
+        <span>min </span><span id="minTemp"></span><span>°C</span>
+        <span>max </span><span id="maxTemp"></span><span>°C</span>
+      </div>
+      <div class="world">
+        <span id="hello" class="A">Hello</span>
+        <span id="world" class="A animation">World</span>
+        <div class="city animation">
+          <i data-feather="search"></i>
+          <input
+            type="text"
+            name="serchCity"
+            id="serchCity"
+            placeholder="city?"
+          />
+        </div>
+      </div>
+      <div class="textcolor onlyAfter" id="condition">
+        <!-- https://feathericons.com/ -->
+      </div>
+      <div class="satellite"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
